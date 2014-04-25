@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Surf-r8r : This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user." />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="Surf-r8r : This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user." />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Surf-r8r</title>
-  </head>
+  <title>Surf-r8r</title>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cnhartley/surf-r8r">View on GitHub</a>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+  <header class="inner">
+    <a id="forkme_banner" href="https://github.com/cnhartley/surf-r8r">View on GitHub</a>
 
-          <h1 id="project_title">Surf-r8r</h1>
-          <h2 id="project_tagline">This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user.</h2>
+    <h1 id="project_title">Surf R8R</h1>
+    <h2 id="project_tagline">This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cnhartley/surf-r8r/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cnhartley/surf-r8r/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+    <section id="downloads">
+      <a class="zip_download_link" href="https://github.com/cnhartley/surf-r8r/zipball/master">Download this project as a .zip file</a>
+      <a class="tar_download_link" href="https://github.com/cnhartley/surf-r8r/tarball/master">Download this project as a tar.gz file</a>
+    </section>
+  </header>
+</div>
+<!-- END HEADER -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
+ <!-- NAVIGATION -->
+<nav>
+  <ul>
+    <li><a href="#intro-page">Introduction</a></li>
+    <li><a href="#project-overview-page">Project Overview</a></li>
+    <li><a href="#background-page">Background</a></li>
+    <li><a href="features-page">Main Features</a></li>
+  </ul>
+</nav>
+<!-- END NAVIGATION -->
+      
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+
+<h3><a name="intro-page" class="anchor" href="#intro-page"><span class="octicon octicon-link"></span></a>Introduction</h3>
+
+<p>This project provides a foundation for a larger project which may not be fully completed by the end of the Spring Quarter 2014 in CSC 481 - Knowledge-Based Systems at California Polytechnic State university in San Luis Obispo. This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user.</p>
+
+<h4><a name="project-overview-page" class="anchor" href="#project-overview-page"><span class="octicon octicon-link"></span></a>Project Overview</h4>
+
+<p>The large project encompuses a client-server web application system. This system contains the front-end user interface, web-based application, and the server-side software. The user interface implementation utilizes HTML5 and CSS3 with JavaScript to support any dynamic content. While the back-end consists of the web-server generating the user interface pages, a database for all of the collected models and user information, and the software to mine the data from the require resource websites. The data miner will also compile the collected information into the appropriate models to store within the database. Finally, additional program(s) to monitor the data model collection in the database and watch for models that users may be interested in.</p>
+
+<h4><a name="background-page" class="anchor" href="#background-page"><span class="octicon octicon-link"></span></a>Background</h4>
+
+<p>Currently, there are not any application that take in user rating on surfing conditions in order to build a recommendation-like model. There are several websites and services that inform people of current ocean condition and some allow users to set alerts on very small sets of specific data pieces. And there are plenty of weather websites displaying the current and predicted conditions. But none that put it all together and allow the user to rate the data set as a whole. This ability enables custom user models of their own important data and hopefully provides meaningful alert notifications of conditions that they may really enjoy.</p>
+
+<h3><a name="features-page" class="anchor" href="#features-page"><span class="octicon octicon-link"></span></a>Main Features</h3>
+
+<p>For the end user of this application concept, this project entails the detection of their hand gestures and mapping them to interact with their computer system. These primary features include:</p>
+
+<dl>
+  <dt>Raw Real-Time Data Collection</dt>
+    <dd>Ability to collect the real-time data from the various sources and compile them into the data models to represent the ocean at a given time.</dd>
+  <dt>Raw Prediction Data Collection</dt>
+    <dd>Collecting future weather forecast data from various sources and compile them into the data models to represent the future ocean conditions at a given time.</dd>
+  <dt>User Login to the Application</dt>
+    <dd>Enables the user to have their own custom preference models based on their previous ratings of ocean condition models gathered.</dd>
+  <dt>User Indicates a Rating for a Particular Surf Session</dt>
+    <dd>Provides the ability for a logged in user to rate a particular time frame of collected ocean models.</dd>
+  <dt>User Rating Matched to a Set of Raw Data Collected to Create a User Preference Model</dt>
+    <dd>Based on the logged in users rating, refines their own custom preference model based on the now rated ocean models.</dd>
+  
+  <p><strong><em>[below are tentative features]</em></strong></p>
+  
+  <dt>Using Future Data Evaluate How a User Might Rate it</dt>
+    <dd>Using the predicted ocean models, determine what the individual users would rate those specific conditions.</dd>
+  <dt>Notification of Potentially High Rated Dates/Times to the Users</dt>
+    <dd>Based on the future estimation of rating for a given predicted ocean model, if the rating is above a certain confidence interval notify the user based on their specified notification method under their account preferences.</dd>
+</dl>
+
+<!--
+<h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
@@ -62,18 +112,17 @@ $ git checkout gh-pages
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+-->
+</section>
+</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Surf-r8r maintained by <a href="https://github.com/cnhartley">cnhartley</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    <p class="copyright">Surf R8R maintained by <a href="https://github.com/cnhartley">Christopher N. Hartley</a></p>
+    <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</div>
 
-    
-
-  </body>
+</body>
 </html>
