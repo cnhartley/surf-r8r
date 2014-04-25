@@ -1,4 +1,4 @@
-surf-r8r
+Surf-R8R
 ========
 
-This project entails user-based preference models of data collected from various sources related to oceanic conditions. These models represent the surfing conditions over a period of time that can be rated by the user.
+The large project encompuses a client-server web application system. This system contains the front-end user interface, web-based application, and the server-side software. The user interface implementation utilizes HTML5 and CSS3 with JavaScript to support any dynamic content. While the back-end consists of the web-server generating the user interface pages, a database for all of the collected models and user information, and the software to mine the data from the require resource websites. The data miner will also compile the collected information into the appropriate models to store within the database. Finally, additional program(s) to monitor the data model collection in the database and watch for models that users may be interested in.
